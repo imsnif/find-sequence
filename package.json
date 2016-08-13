@@ -4,7 +4,7 @@
   "description": "Find all sequences of identical elements in an array",
   "main": "index.js",
   "scripts": {
-    "test": "tape ./test/*.spec.js --tap | tap-spec"
+    "test": "standard && tape ./test/*.spec.js --tap | tap-spec"
   },
   "keywords": [
     "identical",
@@ -17,6 +17,7 @@
   "author": "Aram Drevekenin",
   "license": "MIT",
   "devDependencies": {
+    "standard": "^7.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
   }
