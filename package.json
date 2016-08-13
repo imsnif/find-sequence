@@ -23,5 +23,9 @@
     "standard": "^7.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imsnif/find-sequence"
   }
 }

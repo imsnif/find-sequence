@@ -2,6 +2,11 @@
 
 Find all sequences of elements in an array
 
+## Installation
+```
+npm install find-sequence
+```
+
 ### Usage
 ```javascript
     const findSeq = require('find-sequence')
