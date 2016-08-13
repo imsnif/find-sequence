@@ -1,4 +1,6 @@
 # find-sequence
+[![Build Status](https://travis-ci.org/imsnif/find-sequence.svg?branch=master)](https://travis-ci.org/imsnif/find-sequence)
+[![Coverage Status](https://coveralls.io/repos/github/imsnif/find-sequence/badge.svg?branch=master)](https://coveralls.io/github/imsnif/find-sequence?branch=master)
 
 Find all sequences of elements in an array
 
