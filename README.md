@@ -12,7 +12,7 @@ npm install find-sequence
     const findSeq = require('find-sequence')
     const zeroSequences = findSeq([0, 1, 0, 1, 0, 0, 0, 3, 4, 0, 0], 0)
     console.log(zeroSequences)
-    // [ {start: 0, end: 0}, {start: 2, end: 2}, {start: 4, end: 6}, {start:9, end: 10} ]
+    // [ {start: 0, end: 0}, {start: 2, end: 2}, {start: 4, end: 6}, {start: 9, end: 10} ]
 
     // function as iterator
     const iterator = (a, b) => {
