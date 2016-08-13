@@ -28,7 +28,7 @@ test('no elements found', t => {
 })
 
 test('multiple sequences', t => {
-  t.plan(2)
+  t.plan(5)
   try {
     const ids = require('../')
     const sequences = ids([0, 1, 0, 1, 0, 0, 0, 3, 4, 0, 0], 0)
