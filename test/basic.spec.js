@@ -80,3 +80,20 @@ test('entire array is lookfor element', t => {
     t.end()
   }
 })
+
+test('lookfor as function', t => {
+  t.plan(2)
+  try {
+    const ids = require('../')
+    const iterator = (a, b) => {
+      return b === a - 1
+    }
+    const sequences = ids([1, 2, 3, 4, 0, 7, 8, 9, 0], iterator)
+    t.equals(sequences.length, 2, 'One sequence returned')
+    t.deepEquals(sequences[0], {start: 0, end: 3}, 'Proper start and end positions reported')
+    t.deepEquals(sequences[1], {start: 5, end: 7}, 'Proper start and end positions reported for second sequence')
+  } catch (e) {
+    t.fail(e.toString())
+    t.end()
+  }
+})
