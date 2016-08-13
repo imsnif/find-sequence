@@ -1,7 +1,7 @@
 {
-  "name": "identical-sequence",
+  "name": "find-sequence",
   "version": "1.0.0",
-  "description": "Find all sequences of identical elements in an array",
+  "description": "Find all sequences of elements in an array",
   "main": "index.js",
   "scripts": {
     "test": "standard && tape ./test/*.spec.js --tap | tap-spec",
@@ -9,8 +9,8 @@
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
-    "identical",
     "sequence",
+    "iterator",
     "equivalent",
     "row",
     "array",
