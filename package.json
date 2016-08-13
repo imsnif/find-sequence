@@ -4,7 +4,8 @@
   "description": "Find all sequences of identical elements in an array",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tape ./test/*.spec.js --tap | tap-spec"
+    "test": "standard && tape ./test/*.spec.js --tap | tap-spec",
+    "coverage": "nyc --reporter=lcov npm test"
   },
   "keywords": [
     "identical",
