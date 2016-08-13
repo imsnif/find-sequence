@@ -1,0 +1,19 @@
+{
+  "name": "identical-sequence",
+  "version": "1.0.0",
+  "description": "Find all sequences of identical elements in an array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "identical",
+    "sequence",
+    "equivalent",
+    "row",
+    "array",
+    "element"
+  ],
+  "author": "Aram Drevekenin",
+  "license": "MIT"
+}
