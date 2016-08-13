@@ -15,6 +15,31 @@ test('basic case', t => {
   }
 })
 
+test('bad params', t => {
+  t.plan(3)
+  try {
+    const ids = require('../')
+    t.throws(
+      () => ids(),
+      Error,
+      'Cannot call with no params'
+    )
+    t.throws(
+      () => ids('a', 1),
+      Error,
+      'Cannot call with non-array'
+    )
+    t.throws(
+      () => ids([0, 0, 0, 1]),
+      Error,
+      'Cannot call with no lookfor element'
+    )
+  } catch (e) {
+    t.fail(e.toString())
+    t.end()
+  }
+})
+
 test('no elements found', t => {
   t.plan(1)
   try {
