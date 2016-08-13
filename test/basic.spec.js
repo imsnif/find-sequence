@@ -1,6 +1,6 @@
 'use strict'
 
-const test = 'tape'
+const test = require('tape')
 
 test('basic case', t => {
   t.plan(2)
