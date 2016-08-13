@@ -1,13 +1,21 @@
 module.exports = ids
 
 function handlePotentialSequenceElement (lookfor, pairs, elem, index, arr) {
-  if (elem === lookfor) {
-    if (index === 0 || elem !== arr[index - 1]) {
-      // start of a sequence
+  if (typeof lookfor === 'function') {
+    if ((index === 0 || !lookfor(elem, arr[index - 1])) && arr[index + 1] && lookfor(arr[index + 1], elem)) {
       pairs.push({start: index, end: index})
-    } else {
-      // middle or end of a sequence
+    } else if (lookfor(elem, arr[index - 1])) {
       pairs[pairs.length - 1].end = index
+    }
+  } else {
+    if (elem === lookfor) {
+      if (index === 0 || elem !== arr[index - 1]) {
+        // start of a sequence
+        pairs.push({start: index, end: index})
+      } else {
+        // middle or end of a sequence
+        pairs[pairs.length - 1].end = index
+      }
     }
   }
   return pairs
