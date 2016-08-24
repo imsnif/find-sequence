@@ -1,6 +1,6 @@
 {
   "name": "find-sequence",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Find all sequences of elements in an array",
   "main": "index.js",
   "scripts": {
